@@ -1,3 +1,6 @@
+// Released under the MIT License (MIT)
+// Copyright (c) 2013 Mikael Lennholm
+
 TypeIntent = function(params){
 	var delay = 0;
 	var time = 0;
