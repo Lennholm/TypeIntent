@@ -17,6 +17,8 @@ TypeIntent needs to be bound to an element to work on that element, this is done
 
 `grace`: The time (ms) that will be added to the typing speed when it's applied as the timeout. Negative values are possible but not recommended. Default is 150 ms.
 
+If you don't need to specify the `maxWait` and `grace` parameters, the second argument can be the handler itself rather than the object.
+
 
 Imagine if a user is typing with a speed of two key presses per second, that means 500 ms between every key press. With a grace period of 150 ms this means the timeout will be set to 650 ms. If a key press happens within those 650 milliseconds the timeout will be recalculated and renewed, otherwise the handler will be executed when the 650 ms timeout runs out.
 
