@@ -27,6 +27,6 @@ If the user is typing with a speed that means 750 ms between key presses the tim
 It's recommended to set the `maxWait` a bit higher in scripts that run on mobile devices since typing is usually slower there.
 
 
-TypeIntent also works as a jQuery plugin if jQuery is loaded on the the same page. A `typeIntent()` method is added to the jQuery object which takes the same object as `TypeIntent.on()` as an argument.
+TypeIntent also works as a jQuery plugin if jQuery is loaded on the the same page. A `typeIntent()` method is added to the jQuery object which takes the same object (or handler function) as `TypeIntent.on()` as an argument.
 
 Ex: `jQuery("input#search").typeIntent({handler: typeHandler});`
