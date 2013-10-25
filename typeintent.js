@@ -2,6 +2,8 @@
 // Copyright (c) 2013 Mikael Lennholm
 
 TypeIntent = function(params){
+	if (typeof params == "function")
+		params = {handler: params};
 	var delay = 0;
 	var time = 0;
 	var prevVal;
